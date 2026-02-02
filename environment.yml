@@ -1,0 +1,24 @@
+name: invoice-ai
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - numpy
+  - pillow
+  - poppler        # for pdf2image
+  - tesseract      # OCR engine
+  - pip:
+      - torch
+      - torchvision
+      - transformers
+      - pytesseract
+      - pdf2image
+      - easyocr
+      - streamlit
+      - python-dateutil
+      - google-generativeai
+      - tqdm
